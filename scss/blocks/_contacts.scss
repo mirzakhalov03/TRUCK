@@ -1,0 +1,106 @@
+.contacts {
+  margin-top: 60px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  &__wrapper {
+    max-width: 100%;
+    width: 100%;
+
+    @extend %display;
+
+    margin-top: 50px;
+  }
+
+  &__section {
+    max-width: 40%;
+    width: 100%;
+
+
+    .for__contacts {
+      max-width: 200px;
+      margin-top: 40px;
+      text-align: start;
+
+      p {
+        font-size: 14px;
+        color: #6B6B6C;
+      }
+
+      a {
+        font-size: 20px;
+        color: #363738;
+      }
+
+      @extend %display;
+    }
+  }
+
+  .table-wrapper {
+    background-color: #E9EAF2;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td:nth-child(2) {
+    font-family: $exo;
+    font-weight: 600;
+  }
+
+  .label {
+    color: #6B6B6C;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+
+
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .icon {
+    margin-right: 20px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .value {
+
+
+    a {
+      font-family: $exo;
+      font-weight: 600;
+      font-size: 16px;
+      color: #363738;
+    }
+  }
+
+
+
+
+
+
+}

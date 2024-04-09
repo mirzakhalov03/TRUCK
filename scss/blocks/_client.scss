@@ -1,0 +1,100 @@
+.client{
+    margin-top: 180px;
+    background-color: #0B7572;
+
+    &__wrapper{
+        max-width: 100%;
+        padding: 100px 81px;
+        
+        @extend %display;
+
+        h2{
+            font-family: $exo;
+            font-weight: 600;
+            max-width: 477px;
+            color: white;
+            display: flex;
+            align-self: flex-start;
+        }
+
+        .inside-wrapper{
+            max-width: 655px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+            
+
+            &-header{
+                max-width: 100%;
+                @extend %display;
+                padding-bottom: 30px;
+                border-bottom: 1px solid lightgray;
+
+                p{
+                    max-width: 274px;
+                    font-size: 11px;
+                }
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                
+                
+              }
+              
+              
+              th, td {
+                border: 1px solid rgba(149, 148, 148, 0.359);
+                padding: 20px 12px;
+              }
+
+              td{
+                text-align: left;
+                background-color: #F9F9FB;
+                transition: .2s;
+                p{
+                    font-size: 14px;
+                    padding: 5px 0;
+                    display: flex;
+                    gap: 3px;
+                }
+                strong{
+                    font-family: $exo;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #363738;
+                }
+              }
+              
+              th {
+                text-align: center;
+                font-family: $exo;
+                font-weight: 600;
+                line-height: 24px;
+                color: #fff;
+                background-color:$primary;
+              }
+
+              a{
+                color: #363738;
+                font-size: 13px;
+              }
+
+              td:hover{
+                background-color: #0b7572a9;
+              }
+              td:hover p{
+                color: white;
+            }
+            td:hover a{
+                color: white;
+            }
+            td:hover strong{
+                color: white;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,53 @@
+.footer {
+    margin-top: 80px;
+    padding-top: 80px;
+
+    background-color: $primary;
+
+    &__wrapper {
+        @extend %display;
+        padding-bottom: 50px;
+
+        .tab {
+            height: 160px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a {
+            font-family: $exo;
+            font-weight: 500;
+            font-size: 14px;
+            color: white;
+            letter-spacing: 5px;
+        }
+
+
+
+    }
+
+    .social {
+        display: flex;
+        gap: 20px;
+    }
+
+    &-btn {
+        max-width: 250px;
+        width: 100%;
+        padding: 7px 12px;
+        background-color: #FF9619;
+        color: white;
+
+        a {
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+    }
+
+
+
+}

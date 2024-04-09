@@ -1,0 +1,63 @@
+.work {
+    margin-top: 60px;
+
+    &-header {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        max-width: 660px;
+    }
+
+
+    &__wrapper {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        @extend %display;
+
+
+    }
+
+    &__card {
+        max-width: 400px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        transition: .3s;
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            transform: scale(102%);
+            background-color: hsla(178, 83%, 25%, 0.525);
+        }
+
+        &:hover h3 {
+            color: white;
+        }
+
+        &:hover p {
+            color: white;
+        }
+
+
+    }
+
+    .card__content {
+        padding: 24px 32px;
+
+        p {
+            padding: 15px 0 30px 0;
+        }
+
+        strong {
+            font-family: $exo;
+            padding-top: 40px;
+            font-weight: 600;
+            color: #363738;
+            border-bottom: 3px solid gold;
+            cursor: pointer;
+        }
+    }
+}
